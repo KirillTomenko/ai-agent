@@ -1,0 +1,8 @@
+services:
+  agent:
+    build: .
+    env_file: .env
+    volumes:
+      - ./agent/files:/app/agent/files
+      - ./agent/qr_codes:/app/agent/qr_codes
+      - ./memory.json:/app/memory.json
